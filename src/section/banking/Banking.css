@@ -1,0 +1,18 @@
+.banking{
+    background-image: url('/img/bankingBg.png');
+}
+@media(max-width:640px) {
+    .banking{
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+    .banking .text{
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: auto;
+    }
+    .banking .images{
+        height: auto;
+    }
+}

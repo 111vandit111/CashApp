@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+a {
+  text-decoration: inherit;
+}
+body {
+  margin: 0;
+  background-color: #00D54B;
+}
+
+h1 {
+line-height: 120px;
+font-size: 150px;
+}
+
+.hero .PhoneImg{
+  left: calc(50vw - 200px);
+}
+
+@media (max-width: 500px) {
+  
+  .heroFooter .store{
+    font-size: 30px;
+  }
+  .heroFooter p{
+    font-size: 10px;
+  }
+}
+
+@media (max-width:750px){
+  h1{
+    line-height: normal;
+    font-size: 70px;
+  }
+  .hero .PhoneImg{
+    top: 35%;
+    left: calc(50vw - 100px);
+  }
+  
+}
+
+@media (max-width:320px) {
+  .text{
+    padding: 5px;
+  }
+  
+}
+
+@keyframes reveal{
+  0%{
+    opacity: 0.35;
+    transform: translateX(400px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+@keyframes chk{
+  from {
+    opacity: 0.5;
+  }
+  4% {
+    opacity: 0.7;
+  }
+  8% {
+    opacity: 0.45;
+  }
+  12% {
+    opacity: 0.65;
+  }
+  16% {
+    opacity: 0.30;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  24% {
+    opacity: 0.6;
+  }
+  28% {
+    opacity: 0.25;
+  }
+  32% {
+    opacity: 0.30;
+  }
+  36% {
+    opacity: 0.55;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  44% {
+    opacity: 0.6;
+  }
+  
+  to {
+    opacity:1;
+  }
+}
+
+@keyframes rotate{
+  100%,0%{
+    rotate: 10deg;
+  }
+  50%{
+    rotate: -10deg;
+  }
+}
+@keyframes changeCol{
+  
+  0%{
+    opacity: 0;
+    mix-blend-mode:difference;
+  }
+  100%{
+    opacity: 1;
+    mix-blend-mode: normal;
+  }
+}
