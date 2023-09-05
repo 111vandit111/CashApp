@@ -1,42 +1,47 @@
-.cash{
+.cash {
     background-image: url('/img/cashBBg.png');
 }
+
 @media(max-width:768px) {
-    .cash{
+    .cash {
         padding-top: 30px;
         padding-bottom: 80px;
     }
-    .cash .text{
+
+    .cash .text {
         position: relative;
         right: 0;
         margin: auto;
     }
-    .cash .images{
+
+    .cash .images {
         height: auto;
     }
 }
 
 
-    @media  (max-height:655px) {
-        .cash .text{
-            top: 10%;
-        }
+@media (max-height:655px) {
+    .cash .text {
+        top: 10%;
+    }
 }
 
 
 @media (max-width: 282px) {
-    .cash .text{
+    .cash .text {
         top: 8%;
     }
-    .cash img{
+
+    .cash img {
         right: 15%;
     }
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1150px) {
 
-@media(max-height:670px){
-    .cash img{
-        max-height: 370px;
+    @media(max-height:670px) {
+        .cash img {
+            max-height: 370px;
+        }
     }
-}}
+}

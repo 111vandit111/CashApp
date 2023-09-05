@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import './navbar.css'
+import "./navbar.css";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,13 +9,9 @@ const Nav = () => {
       <nav className="bg-transparent">
         <div className="mx-auto px-4 sm:px-6">
           <div className="flex items-center h-16 w-[100%] justify-between">
-            <div className="flex items-center w-[100%] justify-around" >
+            <div className="flex items-center w-[100%] justify-around">
               <div className="flex-shrink-0">
-                <img
-                  className="h-8 w-8"
-                  src="/img/logo.png"
-                  alt="Workflow"
-                />
+                <img className="h-8 w-8" src="/img/logo.png" alt="Workflow" />
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4 uppercase flex-wrap">
@@ -81,11 +77,7 @@ const Nav = () => {
               </div>
 
               <div className="eyeButton hidden md:block">
-                <img
-                  className="h-8 w-12"
-                  src="/img/eyeB.png"
-                  alt="Workflow"
-                />
+                <img className="h-8 w-12" src="/img/eyeB.png" alt="Workflow" />
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
@@ -186,9 +178,8 @@ const Nav = () => {
           )}
         </Transition>
       </nav>
-
     </div>
   );
-}
+};
 
 export default Nav;
